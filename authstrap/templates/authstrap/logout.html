@@ -1,0 +1,11 @@
+{% extends "authstrap/base_auth.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="auth-container">
+    <div class="alert alert-info alert-block">
+    	<h4>{% trans "Logged Out!" %}</h4>
+    	{% trans "Have a nice day." %}
+	</div>
+</div>
+{% endblock %}

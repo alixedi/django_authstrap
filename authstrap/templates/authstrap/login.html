@@ -1,0 +1,21 @@
+{% extends "authstrap/base_auth.html" %}
+{% load i18n bootstrap_toolkit %}
+
+{% block content %}
+<div class="auth-container">
+    <form class="form-horizontal" method="POST" action=".">
+    	{% csrf_token %}
+        <fieldset>
+            <legend>{% trans "Login" %}</legend>
+            {{ form|as_bootstrap }}
+        </fieldset>
+        <div class="form-actions">
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
+                <a class="btn btn-danger" href="{% url 'auth_password_reset' %}">{% trans "Reset Password" %}</a>
+          	</div>
+            <input type="hidden" name="next" value="{{ next }}" />
+        </div>
+    </form>
+</div>
+{% endblock %}
