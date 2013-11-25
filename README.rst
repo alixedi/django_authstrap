@@ -9,7 +9,7 @@ django_authstrap
         :target: https://travis-ci.org/alixedi/django_authstrap
 
 .. image:: https://pypip.in/d/django_authstrap/badge.png
-        :target: https://crate.io/packages/django_authstrap?version=latest
+        :target: https://crate.io/packages/django_authstrap
 
 
 Bootstrap templates for django.contrib.auth
